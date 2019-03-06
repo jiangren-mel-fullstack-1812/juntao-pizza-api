@@ -3,7 +3,7 @@ import {ToppingListRepository} from '../repositories';
 import {post, param, requestBody} from '@loopback/rest';
 import {Topping} from '../models';
 
-export class TodoListTodoController {
+export class ToppingListToppingController {
   constructor(
     @repository(ToppingListRepository) protected toppingListRepository: ToppingListRepository,
   ) {}

@@ -16,7 +16,7 @@ const repository_1 = require("@loopback/repository");
 const repositories_1 = require("../repositories");
 const rest_1 = require("@loopback/rest");
 const models_1 = require("../models");
-let TodoListTodoController = class TodoListTodoController {
+let ToppingListToppingController = class ToppingListToppingController {
     constructor(toppingListRepository) {
         this.toppingListRepository = toppingListRepository;
     }
@@ -30,10 +30,10 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number, models_1.Topping]),
     __metadata("design:returntype", Promise)
-], TodoListTodoController.prototype, "create", null);
-TodoListTodoController = __decorate([
+], ToppingListToppingController.prototype, "create", null);
+ToppingListToppingController = __decorate([
     __param(0, repository_1.repository(repositories_1.ToppingListRepository)),
     __metadata("design:paramtypes", [repositories_1.ToppingListRepository])
-], TodoListTodoController);
-exports.TodoListTodoController = TodoListTodoController;
+], ToppingListToppingController);
+exports.ToppingListToppingController = ToppingListToppingController;
 //# sourceMappingURL=topping-list-topping.controller.js.map
