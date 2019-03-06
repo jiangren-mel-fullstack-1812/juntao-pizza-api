@@ -47,7 +47,7 @@
     "!*/__tests__"
   ],
   "dependencies": {
-  	"@loopback/cli": "^1.8.1",
+    "@loopback/cli": "^1.8.1",
     "@loopback/boot": "^1.0.14",
     "@loopback/context": "^1.6.0",
     "@loopback/core": "^1.1.7",
@@ -64,6 +64,6 @@
     "@loopback/tslint-config": "^2.0.1",
     "@types/node": "^10.11.2",
     "tslint": "^5.12.0",
-    "typescript": "^3.3.1"
+    "typescript": "^3.3.3333"
   }
 }

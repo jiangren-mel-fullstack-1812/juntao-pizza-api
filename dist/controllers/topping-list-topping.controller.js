@@ -17,11 +17,11 @@ const repositories_1 = require("../repositories");
 const rest_1 = require("@loopback/rest");
 const models_1 = require("../models");
 let TodoListTodoController = class TodoListTodoController {
-    constructor(toppingListRepo) {
-        this.toppingListRepo = toppingListRepo;
+    constructor(toppingListRepository) {
+        this.toppingListRepository = toppingListRepository;
     }
     async create(id, topping) {
-        return await this.toppingListRepo.toppings(id).create(topping);
+        return await this.toppingListRepository.toppings(id).create(topping);
     }
 };
 __decorate([
