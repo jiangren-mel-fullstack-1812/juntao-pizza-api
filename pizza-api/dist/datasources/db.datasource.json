@@ -1,0 +1,10 @@
+{
+    "name": "db",
+    "connector": "mongodb",
+    "url": "mongodb://pizzamanager:pizza2019@ds237979.mlab.com:37979/jzproject",
+    "host": "mlab",
+    "port": 37979,
+    "user": "pizzamanager",
+    "password": "pizza2019",
+    "database": "jzproject"
+}
