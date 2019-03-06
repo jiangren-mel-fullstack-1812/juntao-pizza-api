@@ -31,8 +31,6 @@
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
     "start": "node .",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
     "prepublishOnly": "npm run test"
   },
   "repository": {
@@ -58,16 +56,15 @@
     "@loopback/rest": "^1.7.0",
     "@loopback/rest-explorer": "^1.1.10",
     "@loopback/service-proxy": "^1.0.9",
-    "loopback-connector-mongodb": "^4.0.0"
-  },
-  "devDependencies": {
+    "loopback-connector-mongodb": "^4.0.0",
     "@loopback/build": "^1.3.1",
     "@loopback/testlab": "^1.0.7",
     "@loopback/tslint-config": "^2.0.1",
+    "typescript": "^3.3.3333",
+    "tslint": "^5.12.0"
+  },
+  "devDependencies": {
     "@types/node": "^10.11.2",
-    "concurrently": "^4.1.0",
-    "tsc": "^1.20150623.0",
-    "tslint": "^5.12.0",
-    "typescript": "^3.3.3333"
+    "nodemon": "^1.18.10"
   }
 }
