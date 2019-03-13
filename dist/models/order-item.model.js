@@ -9,39 +9,42 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/* tslint:disable:no-any */
 const repository_1 = require("@loopback/repository");
-/**
- * The model class is generated from OpenAPI schema - Product
- * Product
- */
-let Product = class Product extends repository_1.Entity {
+let OrderItem = class OrderItem extends repository_1.Model {
     constructor(data) {
-        super();
-        if (data != null && typeof data === 'object') {
-            Object.assign(this, data);
-        }
+        super(data);
     }
 };
 __decorate([
-    repository_1.property({ name: 'id', id: true }),
+    repository_1.property({
+        type: 'string',
+        required: true,
+    }),
     __metadata("design:type", String)
-], Product.prototype, "id", void 0);
+], OrderItem.prototype, "productId", void 0);
 __decorate([
-    repository_1.property({ name: 'name', required: true }),
+    repository_1.property({
+        type: 'string',
+    }),
     __metadata("design:type", String)
-], Product.prototype, "name", void 0);
+], OrderItem.prototype, "productName", void 0);
 __decorate([
-    repository_1.property({ name: 'price' }),
+    repository_1.property({
+        type: 'number',
+        required: true,
+    }),
     __metadata("design:type", Number)
-], Product.prototype, "price", void 0);
+], OrderItem.prototype, "price", void 0);
 __decorate([
-    repository_1.property({ name: 'type' }),
-    __metadata("design:type", String)
-], Product.prototype, "type", void 0);
-Product = __decorate([
-    repository_1.model({ name: 'Product' }),
+    repository_1.property({
+        type: 'number',
+        required: true,
+    }),
+    __metadata("design:type", Number)
+], OrderItem.prototype, "quantity", void 0);
+OrderItem = __decorate([
+    repository_1.model(),
     __metadata("design:paramtypes", [Object])
-], Product);
-exports.Product = Product;
-//# sourceMappingURL=product.model.js.map
+], OrderItem);
+exports.OrderItem = OrderItem;
+//# sourceMappingURL=order-item.model.js.map

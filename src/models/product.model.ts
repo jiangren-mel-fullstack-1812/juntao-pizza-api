@@ -1,37 +1,41 @@
-import {Entity, model, property} from '@loopback/repository';
+/* tslint:disable:no-any */
+import { Entity, model, property } from '@loopback/repository';
 
-@model()
+/**
+ * The model class is generated from OpenAPI schema - Product
+ * Product
+ */
+@model({ name: 'Product' })
 export class Product extends Entity {
-  @property({
-    type: 'string',
-    id: true,
-  })
+  constructor(data?: Partial<Product>) {
+    super();
+    if (data != null && typeof data === 'object') {
+      Object.assign(this, data);
+    }
+  }
+
+  /**
+   *
+   */
+  @property({ name: 'id', id: true })
   id?: string;
 
-  @property({
-    type: 'string',
-    required: true,
-  })
+  /**
+   *
+   */
+  @property({ name: 'name', required: true })
   name: string;
 
-  @property({
-    type: 'number',
-    required: true,
-  })
+  /**
+   *
+   */
+  @property({ name: 'price' })
   price: number;
 
-  @property({
-    type: 'string',
-  })
+
+  @property({ name: 'type' })
   type?: string;
 
-  @property({
-    type: 'string',
-  })
-  imageUrl?: string;
 
-
-  constructor(data?: Partial<Product>) {
-    super(data);
-  }
 }
+

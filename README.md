@@ -9,9 +9,3 @@ E-R Diagram [Draw IO](https://drive.google.com/file/d/1US0aEkSoDc4xI0YUsyO-RJVGC
 
 Loopback API Information
 
-Models:
-
-* Topping (id:number, name: string, price: number; imgUrl: string)
-* ToppingList (id:number, toppings:topping[])
-* Order
-* Pizza

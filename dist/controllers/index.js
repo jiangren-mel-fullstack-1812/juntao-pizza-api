@@ -4,7 +4,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./ping.controller"));
-__export(require("./topping.controller"));
-__export(require("./topping-list.controller"));
-__export(require("./topping-list-topping.controller"));
+__export(require("./order.controller"));
+__export(require("./product.controller"));
+__export(require("./user.controller"));
 //# sourceMappingURL=index.js.map
